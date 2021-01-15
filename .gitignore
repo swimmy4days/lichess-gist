@@ -1,0 +1,4 @@
+.vscode
+venv
+TOKENS.py
+__pycache__
