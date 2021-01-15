@@ -1,7 +1,3 @@
-# %%
-
-from TOKENS import GIST_ID, GITHUB_TOKEN, LICHESS_USERNAME  # FIXME
-
 import os
 import sys
 import berserk
@@ -97,11 +93,11 @@ def main():
 
 if __name__ == "__main__":
 
-    # test with python asd.py test <gist> <github-token> <user> FIXME
+    # test with python lichess-gist.py test <gist> <github-token> <user>
     if len(sys.argv) > 1:
-        os.environ[ENV_VAR_GIST_ID] = GIST_ID  # sys.argv[2]
-        os.environ[ENV_VAR_GITHUB_TOKEN] = GITHUB_TOKEN  # sys.argv[3]
-        os.environ[ENV_VAR_LICHESS_USERNAME] = LICHESS_USERNAME  # sys.argv[4]
+        os.environ[ENV_VAR_GIST_ID] =  sys.argv[2]
+        os.environ[ENV_VAR_GITHUB_TOKEN] = sys.argv[3]
+        os.environ[ENV_VAR_LICHESS_USERNAME] = sys.argv[4]
     main()
 
 # %%
