@@ -21,4 +21,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 280898e70f6f8778b13558030464ecb7
-          CHESS_COM_USERNAME: swimmy4days
+          LICHESS_USERNAME: swimmy4days
